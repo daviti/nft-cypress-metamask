@@ -8,4 +8,4 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/run # "run" job comes from "cypress" orb
+      - cypress/run  "SECRET_WORDS="write step depend debate evidence ladder pretty involve ribbon sand cute pond" NETWORK_NAME="Ropsten" npm run cy:open"
