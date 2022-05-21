@@ -1,0 +1,63 @@
+{
+  "name": "nft-cypress-metamask-v2",
+  "version": "1.6.10",
+  "main": "cypress/support/commands.js",
+  "license": "MIT",
+  "keywords": [
+    "Cypress",
+    "Testing",
+    "EthersJS",
+    "Smart Contracts",
+    "Blockchain",
+    "MetaMask",
+    "Utils"
+  ],
+  "standard": {
+    "env": [
+      "cypress/globals"
+    ],
+    "parser": "babel-eslint",
+    "plugins": [
+      "cypress"
+    ]
+  },
+  "scripts": {
+    "start": "superstatic src",
+    "start:silent": "BROWSER=none superstatic src",
+    "cy:opens": "SECRET_WORDS='write step depend debate evidence ladder pretty involve ribbon sand cute pond' cypress open",
+    "cy:open": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress open",
+    "cy:run": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress run --headed --browser chrome"
+  },
+  "dependencies": {
+    "@synthetixio/js": "^2.41.0",
+    "@testing-library/cypress": "^8.0.2",
+    "axios": "^0.26.1",
+    "bytes32": "0.0.3",
+    "cross-zip": "^4.0.0",
+    "cypress": "^9.5.3",
+    "cypress-wait-until": "^1.7.2",
+    "dotenv": "^16.0.0",
+    "eslint-plugin-cypress": "^2.11.3",
+    "ethers": "^5.1.4",
+    "node-fetch": "^2.6.1",
+    "puppeteer-core": "^13.5.2",
+    "semantic-release": "^19.0.2",
+    "standard": "^16.0.3",
+    "start-server-and-test": "^1.12.2",
+    "superstatic": "^7.1.0",
+    "synthetix-js": "^2.66.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saxenashivang/cypress-metamask-v2.git"
+  },
+  "description": "Interacting with you MetaMask made \"easy\". (Depending on how you define \"easy\" of course...)",
+  "bugs": {
+    "url": "https://github.com/saxenashivang/cypress-metamask-v2/issues"
+  },
+  "homepage": "https://github.com/saxenashivang/cypress-metamask-v2#readme",
+  "author": "shivang",
+  "devDependencies": {
+    "cypress-metamask-v2": "^1.6.10"
+  }
+}
