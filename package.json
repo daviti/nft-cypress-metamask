@@ -32,6 +32,7 @@
     "@synthetixio/js": "^2.41.0",
     "@testing-library/cypress": "^8.0.2",
     "axios": "^0.26.1",
+    "browserslist": "^4.20.3",
     "bytes32": "0.0.3",
     "cross-zip": "^4.0.0",
     "cypress": "^9.5.3",
