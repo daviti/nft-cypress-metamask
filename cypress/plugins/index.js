@@ -18,7 +18,7 @@ module.exports = (on, config) => {
       return arguments_;
     }
 
-    if (browser.name === 'electron') {
+    if (browser.name === 'chrome') {
       arguments_['width'] = 1920;
       arguments_['height'] = 1080;
       arguments_['resizable'] = false;
