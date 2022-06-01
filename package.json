@@ -46,7 +46,8 @@
     "standard": "^16.0.3",
     "start-server-and-test": "^1.12.2",
     "superstatic": "^7.1.0",
-    "synthetix-js": "^2.66.0"
+    "synthetix-js": "^2.66.0",
+    "yarn": "^1.22.18"
   },
   "repository": {
     "type": "git",
