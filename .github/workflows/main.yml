@@ -6,11 +6,9 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-     - name: Checkout code
+     - name: Cypress run
         uses: actions/checkout@v2.3.4
         with:
           submodules: recursive
