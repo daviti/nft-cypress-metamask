@@ -9,7 +9,7 @@ jobs:
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
      - name: Cypress run
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2
         with:
           submodules: recursive
           token: ${{ secrets.A_SECRET_TOKEN}}
