@@ -25,8 +25,8 @@
     "start": "superstatic src",
     "start:silent": "BROWSER=none superstatic src",
     "cy:opens": "SECRET_WORDS='write step depend debate evidence ladder pretty involve ribbon sand cute pond' cypress open",
-    "cy:open": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress open",
-    "cy:run": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress run --headed --browser chrome"
+    "cy:run": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress open",
+    "cy:open": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress run --headed --browser chrome"
   },
   "dependencies": {
     "@synthetixio/js": "^2.41.0",
