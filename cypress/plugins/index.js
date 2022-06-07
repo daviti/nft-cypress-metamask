@@ -18,13 +18,7 @@ module.exports = (on, config) => {
       return arguments_;
     }
 
-    if (browser.name === 'electron') {
-      arguments_.args.push(
-        '--disable-background-timer-throttling',
-        '--disable-backgrounding-occluded-windows',
-        '--disable-renderer-backgrounding',
-      );
-    }
+  
 
     // metamask welcome screen blocks cypress from loading
     if (browser.name === 'chrome') {
