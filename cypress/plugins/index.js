@@ -18,13 +18,13 @@ module.exports = (on, config) => {
       return arguments_;
     }
 
-    if (browser.name === 'electron') {
-      arguments_.args.push(
-        '--disable-background-timer-throttling',
-        '--disable-backgrounding-occluded-windows',
-        '--disable-renderer-backgrounding',
-      );
-    }
+    // if (browser.name === 'electron') {
+    //   arguments_.args.push(
+    //     '--disable-background-timer-throttling',
+    //     '--disable-backgrounding-occluded-windows',
+    //     '--disable-renderer-backgrounding',
+    //   );
+    // }
 
     // metamask welcome screen blocks cypress from loading
     if (browser.name === 'chrome') {
@@ -293,5 +293,12 @@ module.exports = (on, config) => {
   module.exports = (on, config) => {
     require('cypress-metamask-v2/cypress/plugins')(on)
   }
+
+  return {
+    browsers: config.browsers.filter(
+      (b) => b.name === 'chrome'
+    ),
+  }
+  
   return config;
 };

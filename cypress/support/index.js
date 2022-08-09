@@ -29,4 +29,8 @@ before(() => {
   if (!Cypress.env('SKIP_METAMASK_SETUP')) {
     cy.setupMetamask();
   }
+
+  
 });
+
+

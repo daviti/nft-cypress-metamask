@@ -147,7 +147,7 @@ Cypress.Commands.add('fetchMetamaskWalletAddress', () => {
 
 Cypress.Commands.add(
   'setupMetamask',
-  (secretWordsOrPrivateKey, network = 'Ropsten', password = 'QualityAssuranceSW1!') => {
+  (secretWordsOrPrivateKey, network, password = 'QualityAssuranceSW1!') => {
     return cy.task('setupMetamask', {
       secretWordsOrPrivateKey,
       network,
