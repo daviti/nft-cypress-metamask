@@ -21,7 +21,7 @@ describe ('Login Test', () => {
                 })
         });
     
-        it('C28 Navigate to Home Page', () => {
+        it('C3233 C3234 C3235 Navigate to Home Page', () => {
             cy.visit('/')
             cy.get(locators.homePage.appSwitcher)
                 .should('be.visible')

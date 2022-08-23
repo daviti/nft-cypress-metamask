@@ -9,13 +9,13 @@ describe ('Profile Test', () => {
             loginAndConnectMetaMask()
         })
 
-        it('C30 Profile Test', () => {
-            cy.get(locators.profile.imgAvatar)
-                .should('be.visible')
-                .click()
-            cy.contains(locators.profile.myProfileMenu)
-                .should('be.visible')
-                .click()
-        })
+        // it('C30 Profile Test', () => {
+        //     cy.get(locators.profile.imgAvatar)
+        //         .should('be.visible')
+        //         .click()
+        //     cy.contains(locators.profile.myProfileMenu)
+        //         .should('be.visible')
+        //         .click()
+        // })
   })
 })

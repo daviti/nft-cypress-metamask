@@ -22,9 +22,7 @@
     ]
   },
   "scripts": {
-    "start": "superstatic src",
-    "start:silent": "BROWSER=none superstatic src",
-    "cy:opens": "SECRET_WORDS='write step depend debate evidence ladder pretty involve ribbon sand cute pond' cypress open",
+    "cy:dashboard": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress run --headed --browser chrome --record --key 841c573a-dbe5-4194-b42b-d35713bae690",
     "cy:open": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress open",
     "cy:run": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress run --headed --browser chrome"
   },
@@ -36,6 +34,7 @@
     "bytes32": "0.0.3",
     "cross-zip": "^4.0.0",
     "cypress": "^9.5.3",
+    "cypress-testrail-reporter": "^1.2.2",
     "cypress-wait-until": "^1.7.2",
     "dotenv": "^16.0.0",
     "eslint-plugin-cypress": "^2.11.3",

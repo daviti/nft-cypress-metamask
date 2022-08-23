@@ -1,6 +1,7 @@
 {
-  "baseUrl": "http://dev.nft.superworldapp.com",
-  "chromeWebSecurity": true,
+  "baseUrl": "https://superworldapp.com",
+  "projectId": "689ihr",
+  "chromeWebSecurity": false,
   "pageLoadTimeout": 200000,
   "defaultCommandTimeout": 200000,
   "requestTimeout": 200000,
@@ -11,5 +12,22 @@
   "env": {
     "SKIP_METAMASK_SETUP": true,
     "PRIVATE_KEY_WITH_FUNDS": "0x"
-  }
+  }, 
+  "ignoreTestFiles": [
+    "**/helper/*.js",
+    "**/authentication/*.js"
+  ],
+
+  "optionalDependencies": { 
+      "fsevents": "*" 
+    },
+
+    "reporter": "cypress-testrail-reporter",
+    "reporterOptions": {
+        "host": "https://superworld.testrail.com",
+        "username": "qa@superworldapp.com",
+        "password": "mestyz-xYdxod-pofxa4",
+        "projectId": 4,
+        "suiteId": 1
+      }
 }
