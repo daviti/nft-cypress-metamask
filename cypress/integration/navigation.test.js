@@ -21,7 +21,7 @@ describe ('Login Test', () => {
     
         it('C31 Navigate to Home Page', () => {
             cy.visit({
-                    url: '/#/home',
+                    url: 'https://superworldapp.com/#/home',
                     method: 'GET',
             })
             cy.get('a.navItemHeader').contains('Marketplace').should('be.visible').click()
