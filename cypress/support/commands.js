@@ -295,3 +295,15 @@ Cypress.Commands.add(
     return subject;
   },
 );
+
+Cypress.Commands.add('MultiClick',(element,times) => {
+  for(let n = 0; n < times; n ++){
+      cy.get(element).should('be.visible').click({ force: true })
+  }
+})
+
+Cypress.Commands.add('MultiClickWord',(element,times) => {
+  for(let n = 0; n < times; n ++){
+      cy.contains(element).should('be.visible').click({ force: true })
+  }
+})

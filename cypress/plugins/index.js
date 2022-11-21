@@ -3,6 +3,7 @@ const puppeteer = require('../support/puppeteer');
 const metamask = require('../support/metamask');
 const synthetix = require('../support/synthetix');
 const etherscan = require('../support/etherscan');
+const TestRailReporter = require('cypress-testrail-reporter');
 
 /**
  * @type {Cypress.PluginConfig}
@@ -12,19 +13,20 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
 
   on('before:browser:launch', async (browser = {}, arguments_) => {
-    if (browser.name === 'chrome' && browser.isHeadless) {
+    if (browser.name === 'electron' && browser.isHeaded) {
       console.log('TRUE'); // required by cypress ¯\_(ツ)_/¯
       arguments_.args.push('--window-size=1920,1080');
       return arguments_;
     }
 
-    // if (browser.name === 'electron') {
-    //   arguments_.args.push(
-    //     '--disable-background-timer-throttling',
-    //     '--disable-backgrounding-occluded-windows',
-    //     '--disable-renderer-backgrounding',
-    //   );
-    // }
+    if (browser.name === 'electron') {
+      arguments_.args.push(
+        '--disable-background-timer-throttling',
+        '--disable-backgrounding-occluded-windows',
+        '--disable-renderer-backgrounding',
+        //'--disable-software-rasterizer'
+      );
+    }
 
     // metamask welcome screen blocks cypress from loading
     if (browser.name === 'chrome') {
@@ -32,6 +34,7 @@ module.exports = (on, config) => {
         '--disable-background-timer-throttling',
         '--disable-backgrounding-occluded-windows',
         '--disable-renderer-backgrounding',
+        //'--disable-software-rasterizer'
       );
     }
     if (!process.env.SKIP_METAMASK_INSTALL) {
@@ -294,11 +297,17 @@ module.exports = (on, config) => {
     require('cypress-metamask-v2/cypress/plugins')(on)
   }
 
+  module.exports = (on, config) => {
+    // configure and register our reporter
+    new TestRailReporter(on, config).register();
+    
+    return config
+}
+
   return {
     browsers: config.browsers.filter(
       (b) => b.name === 'chrome'
     ),
   }
-  
-  return config;
+   
 };

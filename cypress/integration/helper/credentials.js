@@ -1,17 +1,17 @@
 const user = {
-    email: "qa@superworldapp.com",
-    password: "AssuranceQualitySW1!",
-    invalid_email: "abc@abc.com",
-    invalid_password: "123456abc"
+      email: "qa+fox@superworldapp.com",
+      password: "kawika2021!",
+      invalid_email: "abc@abc.com",
+      invalid_password: "123456abc"
 }
 
 const metaMask = {
-    secretCode: "write step depend debate evidence ladder pretty involve ribbon sand cute pond",
-    password: "QualityAssuranceSW1!",
-    network: "rinkeby"
+      secretCode: "sunny rabbit jeans axis across birth already joy split trend rifle phone",
+      password: "kawika2021!",
+      network: "Goerli"
 }
 
-module.exports.credentials = {
-    user,
-    metaMask,
+export const credentials = {
+             user,
+             metaMask,
 }
