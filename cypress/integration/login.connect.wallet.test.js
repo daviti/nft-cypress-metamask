@@ -65,9 +65,9 @@ describe ('Login Test', () => {
          });
 
         //Marketplace
-        it('C18 Navigate over the Marketplace', () => {
-            marketPlace()
-         });
+        // it('C18 Navigate over the Marketplace', () => {
+        //     marketPlace()
+        //  });
 
         //Profile
         it('C24 C25 C52 Add, Edit profile', () => {

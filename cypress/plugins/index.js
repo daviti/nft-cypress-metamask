@@ -13,7 +13,7 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
 
   on('before:browser:launch', async (browser = {}, arguments_) => {
-    if (browser.name === 'electron' && browser.isHeaded) {
+    if (browser.name === 'chrome' && browser.isHeaded) {
       console.log('TRUE'); // required by cypress ¯\_(ツ)_/¯
       arguments_.args.push('--window-size=1920,1080');
       return arguments_;
