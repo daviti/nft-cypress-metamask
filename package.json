@@ -38,7 +38,7 @@
     "debug": "^4.3.4",
     "dotenv": "^16.0.3",
     "dotenv-parse-variables": "^2.0.0",
-    "download": "^8.0.0",
+    "download": "^3.3.0",
     "eslint-plugin-cypress": "^2.12.1",
     "ethers": "^5.1.4",
     "n": "^9.0.1",
@@ -47,7 +47,7 @@
     "serve": "^14.0.1",
     "stable": "^0.1.8",
     "start-server-and-test": "^1.14.0",
-    "synthetix-js": "^2.74.1"
+    "synthetix-js": "^2.4.1"
   },
   "devDependencies": {
     "@metamask/test-dapp": "^5.2.1",
