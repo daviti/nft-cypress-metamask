@@ -9217,6 +9217,13 @@
   "resolved" "https://registry.npmjs.org/playwright-core/-/playwright-core-1.28.0.tgz"
   "version" "1.28.0"
 
+"playwright@^1.28.0":
+  "integrity" "sha512-kyOXGc5y1mgi+hgEcCIyE1P1+JumLrxS09nFHo5sdJNzrucxPRAGwM4A2X3u3SDOfdgJqx61yIoR6Av+5plJPg=="
+  "resolved" "https://registry.npmjs.org/playwright/-/playwright-1.28.0.tgz"
+  "version" "1.28.0"
+  dependencies:
+    "playwright-core" "1.28.0"
+
 "pngjs@^3.3.0":
   "integrity" "sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w=="
   "resolved" "https://registry.npmjs.org/pngjs/-/pngjs-3.4.0.tgz"
