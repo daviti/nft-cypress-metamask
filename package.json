@@ -41,8 +41,10 @@
     "download": "^8.0.0",
     "eslint-plugin-cypress": "^2.12.1",
     "ethers": "^5.1.4",
+    "n": "^9.0.1",
     "node-fetch": "^2.6.1",
     "serve": "^14.0.1",
+    "stable": "^0.1.8",
     "start-server-and-test": "^1.14.0",
     "synthetix-js": "^2.74.1"
   },
