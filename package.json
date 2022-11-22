@@ -28,23 +28,23 @@
     "cy:run": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress run --headed --browser chrome"
   },
   "dependencies": {
+    "@playwright/test": "^1.27.1",
     "@synthetixio/js": "^2.41.0",
     "@testing-library/cypress": "^8.0.2",
     "axios": "^1.1.2",
     "bytes32": "0.0.3",
-    "cypress": "^10.10.0",
+    "cypress": "^11.1.0",
+    "cypress-wait-until": "^1.7.2",
+    "debug": "^4.3.4",
     "dotenv": "^16.0.3",
     "dotenv-parse-variables": "^2.0.0",
+    "download": "^8.0.0",
     "eslint-plugin-cypress": "^2.12.1",
     "ethers": "^5.1.4",
     "node-fetch": "^2.6.1",
+    "serve": "^14.0.1",
     "start-server-and-test": "^1.14.0",
-    "synthetix-js": "^2.74.1",
-    "cypress-wait-until": "^1.7.2",
-    "@playwright/test": "^1.27.1",
-    "download": "^8.0.0",
-    "debug": "^4.3.4",
-    "serve": "^14.0.1"
+    "synthetix-js": "^2.74.1"
   },
   "devDependencies": {
     "@metamask/test-dapp": "^5.2.1",
