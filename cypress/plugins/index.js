@@ -19,11 +19,10 @@ module.exports = (on, config) => {
     }
 
     if (browser.name === 'electron') {
-      arguments_.args.push(
-        '--disable-background-timer-throttling',
-        '--disable-backgrounding-occluded-windows',
-        '--disable-renderer-backgrounding',
-      );
+      arguments_['width'] = 1920;
+      arguments_['height'] = 1080;
+      arguments_['resizable'] = false;
+      return arguments_;
     }
 
     // metamask welcome screen blocks cypress from loading
@@ -286,7 +285,7 @@ module.exports = (on, config) => {
   if (process.env.SKIP_METAMASK_SETUP) {
     config.env.SKIP_METAMASK_SETUP = true;
   }
-
+  
   module.exports = (on, config) => {
     require('cypress-metamask-v2/cypress/plugins')(on)
   }
