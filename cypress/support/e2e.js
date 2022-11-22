@@ -1,4 +1,5 @@
 import './commands';
+import 'cypress-metamask-v2';
 import { configure } from '@testing-library/cypress';
 
 configure({ testIdAttribute: 'data-testid' });
